@@ -4,7 +4,7 @@ import helper.Helper;
 
 public class Merge {
 
-	private static void merge(Comparable<Object> a[],Comparable<Object> aux[],int lo,int mid,int hi){
+	private static void merge(Comparable<?> a[],Comparable<?> aux[],int lo,int mid,int hi){
 		assert Helper.isSorted(a,lo,mid);
 		assert Helper.isSorted(a,mid+1,hi);
 		
@@ -20,7 +20,7 @@ public class Merge {
 		}
 	}
 	
-	public static void sort(Comparable<Object> a[],Comparable<Object> aux[],int lo,int hi){
+	public static void sort(Comparable<?> a[],Comparable<?> aux[],int lo,int hi){
 		if(hi <= lo) return;
 		int mid = lo + (hi - lo)/2;
 		sort(a,aux,lo,mid);
@@ -28,8 +28,8 @@ public class Merge {
 		merge(a,aux,lo,mid,hi);
 	}
 	
-	public static void sort(Comparable<Object> a[]){
-		Comparable[] aux = new Comparable[a.length];
+	public static void sort(Comparable<?> a[]){
+		Comparable<?>[] aux = new Comparable[a.length];
 		sort(a,aux,0,a.length-1);
 	}
 }

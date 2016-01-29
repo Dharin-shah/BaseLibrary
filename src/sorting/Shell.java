@@ -5,7 +5,7 @@ import helper.Helper;
 
 public class Shell {
 
-	public static void sort(Comparable<Object> a[]){
+	public static void sort(Comparable<?> a[]){
 		int N = a.length;
 		
 		int h = 1;

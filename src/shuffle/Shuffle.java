@@ -14,7 +14,7 @@ public final class Shuffle {
 		 return rand;
 		 }
  
-	public static void shuffle(Comparable<Object> a[]){
+	public static void shuffle(Comparable<?> a[]){
 		int N  = a.length;
 		Random n = Shuffle.getInstance();
 		for(int i = 0; i < N; i++)
