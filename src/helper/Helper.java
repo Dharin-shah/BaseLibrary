@@ -6,7 +6,9 @@ public final class Helper {
 	
 	public static boolean less(Comparable v,Comparable w){
 		if(!v.getClass().isInstance(w))
-			throw new ClassCastException("Objects not of Same Class");
+			/* weird though helps me debug */
+			throw new ClassCastException("Objects not of Same Class"); 
+		/* This warning is suppressed because v and w are checked for being of same class */
 		@SuppressWarnings("unchecked")
 		int result = v.compareTo(w); 
 		return  result < 0;

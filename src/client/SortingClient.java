@@ -1,5 +1,6 @@
 package client;
 
+import helper.Helper;
 import sorting.*;
 
 public class SortingClient {
@@ -12,7 +13,7 @@ public class SortingClient {
 		Selection.sort(a);
 		Shell.sort(a);
 		print(a);
-		
+		Helper.less(new Integer(5), "hello");
 	}
 	
 	public static void print(Object[] a){
