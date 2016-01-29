@@ -13,7 +13,9 @@ public class SortingClient {
 		Selection.sort(a);
 		Shell.sort(a);
 		print(a);
-		Helper.less(new Integer(5), "hello");
+		//Helper.less(new Integer(5), "hello");
+		Helper.exch(new Integer[]{1,2,3}, 0, 1);
+		print(a);
 	}
 	
 	public static void print(Object[] a){
